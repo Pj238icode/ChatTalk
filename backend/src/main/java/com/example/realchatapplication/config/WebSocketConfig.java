@@ -23,7 +23,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
 
         registry.addEndpoint("/ws").
-                setAllowedOriginPatterns("http://localhost:5173", "http://localhost:3000","https://chattalk-k8mg.onrender.com")
+                setAllowedOriginPatterns("https://chattalk1.netlify.app","https://chattalk-k8mg.onrender.com")
                 .withSockJS();
     }
 }
