@@ -43,7 +43,7 @@ public class SecurityConfig {
                         // Public endpoints
                         .requestMatchers("/auth/signup", "/auth/login", "/h2-console/**").permitAll()
                         // WebSocket endpoints
-                        .requestMatchers("/ws/**").authenticated()
+                        .requestMatchers("/ws/**").permitAll()
                         // Authenticated API endpoints
                         .requestMatchers("/auth/change-password", "/api/**").authenticated()
                         // All other endpoints require authentication
