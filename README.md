@@ -16,7 +16,7 @@ ChatTalk is a modern real-time chat application built using **Spring Boot**, **R
 
 - **Frontend:** React, Tailwind CSS, WebSockets
 - **Backend:** Spring Boot, Spring Security, WebSocket support
-- **Database:** (Specify your database, e.g., MySQL, PostgreSQL)
+- **Database:** MongoDB
 - **Cloud Storage:** AWS S3 for file uploads
 - **Real-Time Communication:** WebSockets
 ## Demo
@@ -28,5 +28,12 @@ ChatTalk is a modern real-time chat application built using **Spring Boot**, **R
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Pj238icode/ChatTalk.git
    cd backend
+2. Configure your environment variables (application.properties or .env) for database and AWS S3 credentials.
+3. Build and run the Spring Boot application:
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+4.    
+
